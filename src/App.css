@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+ 
 }
-
+body{
+  background-color: #ffcccc;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +29,37 @@
 
 .App-link {
   color: #61dafb;
+}
+.Form_container{
+  border:1px solid black;
+  width:300px;
+  position:relative;
+  left:400px;
+  margin:30px;
+  padding:20px;
+  background-color:#b3d9ff;
+}
+.input-group{
+  padding:20px;
+}
+.Listing{
+  font-size: larger;
+  font-style: italic;
+  color:#800000;
+  border:1px solid black;
+  width:200px;
+  position:relative;
+  left:500px;
+  background-color: #ffce99;
+}
+.label{
+  padding:8px;
+  
+}
+
+.form-control1{
+  position:relative;
+  right:6px;
 }
 
 @keyframes App-logo-spin {
