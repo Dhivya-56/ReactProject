@@ -7,19 +7,29 @@ const Home = () => {
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
   const [keyword, setKeyword] = useState('')
+  // const[toggle,setToggle]=useState([])
+  // console.log(toggle)
+
+  //   function readBlog(index) {
+  //       if (!toggle.includes(index)) {
+  //           setToggle([ index]);
+           
+  //       }
+        
+  //   }
   function deleteBlog(id) {
     setBlogs(blogs.filter(blog => blog.id !== id))
   }
   const [blogs, setBlogs] = useState([
     {
-      title: 'Agni siragugal', author: 'APJ', id: 1
+      title: 'Agni siragugal', author: 'APJ', id: 1,color:'red'
 
     },
     {
-      title: 'Display', author: 'rishikesh', id: 2
+      title: 'Display', author: 'Rishikesh', id: 2,color:'red'
     },
     {
-      title: 'Win the race', author: 'Robin sharma', id: 3
+      title: 'Win the race', author: 'Robin sharma', id: 3,color:'red'
     }
   ])
 
@@ -64,7 +74,7 @@ const Home = () => {
 
       </div>
       <div>
-        <Bloglist blog={blogs} deleteBlog={deleteBlog} />
+        <Bloglist blog={blogs} deleteBlog={deleteBlog} setBlog={setBlogs} />
       </div>
     </>
   )
