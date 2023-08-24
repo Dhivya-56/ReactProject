@@ -38,8 +38,8 @@ const Bloglist = ({ blog, title, deleteBlog,setBlog}) => {
             Read
             </button>
           ) : (
-            ""
-          )}
+          ""
+         )}
                 </div>
             ))}
 

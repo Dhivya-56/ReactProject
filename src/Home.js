@@ -41,7 +41,7 @@ const Home = () => {
     e.preventDefault()
     const id = (blogs.length) ? blogs[blogs.length - 1].id + 1 : 1;
 
-    const newpost = [{ title: title, author: body, id }]
+    const newpost = [{ title: title, author: body, id,color:'red' }]
     console.log(newpost)
     const allpost = [...newpost, ...blogs]
     console.log(allpost)
